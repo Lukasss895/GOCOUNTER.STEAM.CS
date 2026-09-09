@@ -172,7 +172,7 @@
             <p><strong>Game Client (CS:GO Build)</strong><br>
             You must use this exact client version to avoid incompatibility issues:<br>
             <a href="https://drive.usercontent.google.com/download?id=1EEsF_eieGHUnyYZYG5_lNrFbG5Kr7OzI&export=download&authuser=0" target="_blank" class="btn-download">Download GO:COUNTER Client</a></p>
-            <a href="https://drive.google.com/file/d/1459utTHmn_h6gzyLKx7E5zSGO7dj9Mx2/view?usp=sharing" target="_blank" class="btn-download">Download NOSTEAM LAUNCHER</a></p>
+            <p><a href="https://drive.google.com/file/d/1459utTHmn_h6gzyLKx7E5zSGO7dj9Mx2/view?usp=sharing" target="_blank" class="btn-download">Download NOSTEAM LAUNCHER</a></p>
         </div>
 
         <!-- SECTION 3: ABOUT -->
@@ -192,18 +192,19 @@
                 </div>
                 <div style="line-height: 1.6; margin-bottom: 25px;">
                 -From Shitty bugged Steam version to Nosteam with all skins from 2016 CS:GO<br>
-                -Fixed Rank System on Retakes
-                -Fixed FastDL From Radmin VPN FastDL to Github FastDL
-                -New version new maps
-                -On Steam have poor optimization (laggy,stuttering on Windows 11) On Nosteam runs very well
-                -Fixed bans and kick when you hacking or killing to much players
-                -From snd_mixahead 0.5 on steam which is shitty now on nosteam 0.1 so now have 10ms delay
-                -Removed temporary GO:TV Because gotv crashed csgo server 
-                -Fixed some bugs on Retakes 
-                -On this version include Start Timeout
-                -Fixed Switcher from headphones to 2 Speaker etc.
-                -Fixed servers because on steam runs only on sv_lan 1 but now runs on your choose if you have 0 or 1     
-           </div>
+                -Fixed Rank System on Retakes<br>
+                -Fixed FastDL From Radmin VPN FastDL to Github FastDL<br>
+                -New version new maps<br>
+                -On Steam have poor optimization (laggy,stuttering on Windows 11) On Nosteam runs very well<br>
+                -Fixed bans and kick when you hacking or killing to much players<br>
+                -From snd_mixahead 0.5 on steam which is shitty now on nosteam 0.1 so now have 10ms delay<br>
+                -Removed temporary GO:TV Because gotv crashed csgo server<br>
+                -Fixed some bugs on Retakes<br>
+                -On this version include Start Timeout<br>
+                -Fixed Switcher from headphones to 2 Speaker etc.<br>
+                -Fixed servers because on steam runs only on sv_lan 1 but now runs on your choose if you have 0 or 1<br>
+               </div>
+            </div>
         </div>
         
         <!-- SECTION 5: DEMOS (DYNAMICKÉ CEZ GITHUB RELEASES) -->
@@ -336,8 +337,8 @@
         // Automatické načítanie dem z GitHub Releases
         async function loadDemosFromGitHub() {
             const tbody = document.getElementById("demos-list");
-            // SEM DOPLŇ SVOJE ÚDAJE Z GITHUB-u (napr. "tvoj-username/csgo-demos")
-            const repoOwnerAndName = "https://lukasss895.github.io/GOCOUNTER.STEAM.CS/"; 
+            // Úprava: Správny formát pre GitHub API (username/repozitar)
+            const repoOwnerAndName = "lukasss895/GOCOUNTER.STEAM.CS"; 
 
             try {
                 const response = await fetch(`https://api.github.com/repos/${repoOwnerAndName}/releases`);
